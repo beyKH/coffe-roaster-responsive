@@ -332,15 +332,11 @@ img {
   margin-right: 30px;
 }
 
-.collection-product {}
-
 .collection__img {
   margin-bottom: 70px;
   width: 255px;
   height: 193px;
 }
-
-.collection-product__inner {}
 
 .collection-inner__heading {
   margin-top: 0;
@@ -359,9 +355,6 @@ img {
   color: var(--dark-grey-blue);
 }
 
-.info {}
-
-
 
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -371,7 +364,7 @@ only screen and (min-device-pixel-ratio: 2),
 only screen and (min-resolution: 192dpi),
 only screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: url('../img/hero-bg.jpg');
+    background-image: url('../img/hero-bg@2x.jpg');
   }
 }
 
@@ -468,6 +461,8 @@ only screen and (min-resolution: 2dppx) {
   }
 
   .hero__inner{
+    margin-left: auto;
+    margin-right: auto;
     width: 280px;
     text-align: center;
   }
@@ -487,10 +482,64 @@ only screen and (min-resolution: 2dppx) {
     margin-bottom: 24px;
   }
 
+  /* COLLECTION SECTION MOBILE */
+  .collection {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .collection__heading {
+    margin-bottom: 13px;
+    font-size: 40px;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  .collection__list {
+    margin: 0 auto -48px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+  }
+
+  .collection__item {
+    margin-right: 0;
+    text-align: center;
+    width: 288px;
+    margin-bottom: 48px;
+  }
+
+  .collection__item:not(:last-child){
+    margin-right: 0;
+  }
+
+  .collection__img {
+    margin-bottom: 24px;
+    width: 200px;
+    height: 151px;
+  }
+
+  .collection-inner__heading {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--dark-grey-blue);
+
+  }
+
+  .collection-inner__info {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--dark-grey-blue);
+  }
 
 }
 
 
 
-/* RETINA */
 
